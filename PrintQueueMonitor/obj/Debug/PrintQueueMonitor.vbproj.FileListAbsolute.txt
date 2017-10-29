@@ -1,0 +1,9 @@
+C:\Users\rgens\Desktop\Scripts\PrintQueueMonitor\PrintQueueMonitor\bin\Debug\PrintQueueMonitor.exe.config
+C:\Users\rgens\Desktop\Scripts\PrintQueueMonitor\PrintQueueMonitor\bin\Debug\PrintQueueMonitor.exe
+C:\Users\rgens\Desktop\Scripts\PrintQueueMonitor\PrintQueueMonitor\bin\Debug\PrintQueueMonitor.pdb
+C:\Users\rgens\Desktop\Scripts\PrintQueueMonitor\PrintQueueMonitor\bin\Debug\PrintQueueMonitor.xml
+C:\Users\rgens\Desktop\Scripts\PrintQueueMonitor\PrintQueueMonitor\obj\Debug\PrintQueueMonitor.Resources.resources
+C:\Users\rgens\Desktop\Scripts\PrintQueueMonitor\PrintQueueMonitor\obj\Debug\PrintQueueMonitor.vbproj.GenerateResource.Cache
+C:\Users\rgens\Desktop\Scripts\PrintQueueMonitor\PrintQueueMonitor\obj\Debug\PrintQueueMonitor.exe
+C:\Users\rgens\Desktop\Scripts\PrintQueueMonitor\PrintQueueMonitor\obj\Debug\PrintQueueMonitor.xml
+C:\Users\rgens\Desktop\Scripts\PrintQueueMonitor\PrintQueueMonitor\obj\Debug\PrintQueueMonitor.pdb

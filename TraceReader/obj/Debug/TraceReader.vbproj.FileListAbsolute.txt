@@ -1,0 +1,13 @@
+C:\Users\rgens\Desktop\Scripts\TraceReader\TraceReader\bin\Debug\TraceReader.exe.config
+C:\Users\rgens\Desktop\Scripts\TraceReader\TraceReader\bin\Debug\TraceReader.exe
+C:\Users\rgens\Desktop\Scripts\TraceReader\TraceReader\bin\Debug\TraceReader.pdb
+C:\Users\rgens\Desktop\Scripts\TraceReader\TraceReader\bin\Debug\TraceReader.xml
+C:\Users\rgens\Desktop\Scripts\TraceReader\TraceReader\obj\Debug\TraceReader.Resources.resources
+C:\Users\rgens\Desktop\Scripts\TraceReader\TraceReader\obj\Debug\TraceReader.vbproj.GenerateResource.Cache
+C:\Users\rgens\Desktop\Scripts\TraceReader\TraceReader\obj\Debug\TraceReader.exe
+C:\Users\rgens\Desktop\Scripts\TraceReader\TraceReader\obj\Debug\TraceReader.xml
+C:\Users\rgens\Desktop\Scripts\TraceReader\TraceReader\obj\Debug\TraceReader.pdb
+C:\Users\rgens\Desktop\Scripts\TraceReader\TraceReader\bin\Debug\TraceReader.exe.manifest
+C:\Users\rgens\Desktop\Scripts\TraceReader\TraceReader\bin\Debug\TraceReader.application
+C:\Users\rgens\Desktop\Scripts\TraceReader\TraceReader\obj\Debug\TraceReader.exe.manifest
+C:\Users\rgens\Desktop\Scripts\TraceReader\TraceReader\obj\Debug\TraceReader.application
