@@ -1,0 +1,79 @@
+
+Set-ExecutionPolicy RemoteSigned 
+#PowerShell.exe -windowstyle hidden {
+
+    Function Get-FileName($initialDirectory)
+    {   
+     [System.Reflection.Assembly]::LoadWithPartialName(“System.windows.forms”) |
+     Out-Null
+
+     $OpenFileDialog = New-Object System.Windows.Forms.OpenFileDialog
+     $OpenFileDialog.initialDirectory = $initialDirectory
+     $OpenFileDialog.filter = “All files (*.*)| *.*”
+     $OpenFileDialog.ShowDialog() | Out-Null
+     $OpenFileDialog.filename
+    } #end function Get-FileName
+
+    $initialDirectory = "C:\Users\Public\Desktop"
+    $excelFile1 = Get-FileName -initialDirectory $initialDirectory
+    $excelFile2 = Get-FileName -initialDirectory $initialDirectory
+    $compareResultsFile = "C:\Users\rgens\Desktop\CompareResults.xlsx"
+
+    $compExcelObj = NEW-OBJECT -ComObject Excel.Application
+    $compExcelObj.DisplayAlerts = $FALSE
+    $compExcelObj.Visible = $TRUE
+
+    IF(TEST-PATH $compareResultsFile){
+        $compareResultsFileWB = $compExcelObj.Workbooks.Open($compareResultsFile)
+        $compareResultsFileWS = $compareResultsFileWB.Worksheets.Item(1)
+    }ELSE{
+        $compareResultsFileWB = $compExcelObj.Workbooks.Add()
+        $compareResultsFileWS = $compareResultsFileWB.Worksheets.Item(1)
+    }
+
+
+    $maxCol = 20
+
+    IF(TEST-PATH $excelFile1){
+        IF(TEST-PATH $excelFile2){
+
+            $excel1Obj = NEW-OBJECT -ComObject Excel.Application
+            $excel1Obj.DisplayAlerts = $FALSE
+            $excel1Obj.Visible = $FALSE
+            
+            $excel2Obj = NEW-OBJECT -ComObject Excel.Application
+            $excel2Obj.DisplayAlerts = $FALSE
+            $excel2Obj.Visible = $FALSE
+
+            $excelFile1WB = $excel1Obj.Workbooks.Open($excelFile1)
+            $excelFile1WS = $excelFile1WB.Worksheets.Item(1)
+
+            $excelFile2WB = $excel2Obj.Workbooks.Open($excelFile2)
+            $excelFile2WS = $excelFile2WB.Worksheets.Item(1)
+
+            
+
+
+            $excelFile1Rows = $excelFile1WS.UsedRange.Rows.Count
+
+            FOR ($ef1Row = 1; $ef1Row -le $excelFile1Rows; $ef1Row++){
+                FOR($ef1Col = 1; $ef1Col -lt $maxCol; $ef1Col++){
+                    IF($excelFile1WS.Cells.Item($ef1Row, $ef1Col).text -ne $excelFile2WS.Cells.Item($ef1Row, $ef1Col).text){
+                        $compareResultsFileWS.Cells.Item($ef1Row, $ef1Col).Font.ColorIndex = 3
+                        $compareResultsFileWS.Cells.Item($ef1Row, $ef1Col)= $excelFile1WS.Cells.Item($ef1Row, $ef1Col).text + "`n*******`n" + 
+                        $excelFile2WS.Cells.Item($ef1Row, $ef1Col).text
+                    }
+                    ELSE{
+                        $compareResultsFileWS.Cells.Item($ef1Row, $ef1Col)= $excelFile1WS.Cells.Item($ef1Row, $ef1Col).text
+                    }
+                }
+            }
+            $excel1Obj.Quit()
+            $excel2Obj.Quit()
+        }ELSE{
+            [system.windows.forms.messagebox]::show($excelFile2 + "Could Not Be Found")
+        }
+    }ELSE{
+        [system.windows.forms.messagebox]::show($excelFile1 + "Could Not Be Found")
+    }
+#}
