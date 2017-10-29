@@ -1,0 +1,9 @@
+C:\Users\Ryan\Documents\GitHub\C#\FileWatcher\FileWatcher\bin\Debug\FileWatcher.exe.config
+C:\Users\Ryan\Documents\GitHub\C#\FileWatcher\FileWatcher\bin\Debug\FileWatcher.exe
+C:\Users\Ryan\Documents\GitHub\C#\FileWatcher\FileWatcher\bin\Debug\FileWatcher.pdb
+C:\Users\Ryan\Documents\GitHub\C#\FileWatcher\FileWatcher\obj\Debug\FileWatcher.csprojResolveAssemblyReference.cache
+C:\Users\Ryan\Documents\GitHub\C#\FileWatcher\FileWatcher\obj\Debug\FileWatcher.Form1.resources
+C:\Users\Ryan\Documents\GitHub\C#\FileWatcher\FileWatcher\obj\Debug\FileWatcher.Properties.Resources.resources
+C:\Users\Ryan\Documents\GitHub\C#\FileWatcher\FileWatcher\obj\Debug\FileWatcher.csproj.GenerateResource.Cache
+C:\Users\Ryan\Documents\GitHub\C#\FileWatcher\FileWatcher\obj\Debug\FileWatcher.exe
+C:\Users\Ryan\Documents\GitHub\C#\FileWatcher\FileWatcher\obj\Debug\FileWatcher.pdb
