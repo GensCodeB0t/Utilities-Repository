@@ -1,0 +1,2 @@
+This is a file watcher utility program that watches a file (set in the App Config file of the project) 
+for changes and shows the file contents in a Rich Text Box.
